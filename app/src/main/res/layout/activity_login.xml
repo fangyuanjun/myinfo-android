@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/login_loginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="登录名" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/login_userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/login_loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/login_forgetPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#0000"
+            android:onClick="login_forgetPasswdClick"
+            android:text="忘记密码?"
+            android:textColor="#00f"
+            android:textSize="16sp" />
+        <!-- 占位 -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_createNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#0000"
+            android:onClick="login_createNewUserClick"
+            android:text="新用户"
+            android:textColor="#00f"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/nv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_testPic"
+        android:layout_marginTop="20dp"
+        ></com.android.volley.toolbox.NetworkImageView>  -->
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/login_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

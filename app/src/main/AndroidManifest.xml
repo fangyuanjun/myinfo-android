@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kecq.myinfo">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- android6.0中，获取通讯录的权限是GET_ACCOUNTS 6.0之前的版本中的权限设置是READ_CONTACTS -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- <uses-permission android:name="android.permission.READ_PROFILE" /> -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:name=".ApplicationEx"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_my_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_my_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ImageLoaderTestActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".OldActivity" />
+        <activity android:name=".UnlockActivity" />
+        <activity android:name=".LockActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_start"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyregisterListActivity" />
+        <activity android:name=".ArticleListActivity" />
+        <activity android:name=".ArticleShowActivity" />
+        <activity android:name=".NoteListActivity" />
+        <activity android:name=".NoteEditActivity" />
+        <activity android:name=".MyregisterShowActivity" />
+        <activity android:name=".MovieListActivity" />
+        <activity android:name=".MovieShowActivity" />
+        <activity android:name=".NoteShowActivity" />
+        <activity android:name=".ListTestActivity" />
+        <activity android:name=".FavoriteListActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".InputLocalPasswordActivity" />
+        <activity android:name=".MyWebViewActivity" />
+        <activity android:name=".CateSelectActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".CallActivity" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".DownloadActivity"></activity>
+    </application>
+
+</manifest>
